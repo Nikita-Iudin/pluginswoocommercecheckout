@@ -4,13 +4,11 @@
 	var CSPAdmin = {
 
 		init: function() {
-			console.log('[CSP] Admin JS loaded, initializing...');
 			this.initSortable();
 			this.bindGeneralSettings();
 			this.bindCheckoutFields();
 			this.bindToggleDetails();
 			this.bindEnabledToggle();
-			console.log('[CSP] Init complete. Sortable: ' + ($.fn.sortable ? 'yes' : 'no') + ', list items: ' + $('#csp-checkout-fields-list .csp-field-item').length);
 		},
 
 		initSortable: function() {

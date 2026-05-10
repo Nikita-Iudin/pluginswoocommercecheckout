@@ -49,9 +49,6 @@ class Custom_Store_Admin_Menu {
 	}
 
 	public function enqueue_assets( string $hook ): void {
-		// Debug: uncomment the line below to see the actual hook value
-		// error_log( 'CSP enqueue_assets hook: ' . $hook . ' | suffixes: ' . implode( ',', $this->hook_suffixes ) );
-
 		if ( ! in_array( $hook, $this->hook_suffixes, true ) ) {
 			return;
 		}
