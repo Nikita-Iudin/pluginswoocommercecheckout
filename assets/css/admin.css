@@ -1,0 +1,124 @@
+.csp-checkout-fields-wrapper {
+	max-width: 800px;
+}
+
+.csp-sortable {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0;
+}
+
+.csp-field-item {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	margin-bottom: 8px;
+	border-radius: 4px;
+}
+
+.csp-field-item.ui-sortable-helper {
+	box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+
+.csp-field-item.ui-sortable-placeholder {
+	background: #f0f6fc;
+	border: 1px dashed #0073aa;
+	visibility: visible !important;
+	min-height: 44px;
+}
+
+.csp-field-header {
+	display: flex;
+	align-items: center;
+	padding: 10px 12px;
+	gap: 8px;
+	cursor: default;
+}
+
+.csp-drag-handle {
+	cursor: grab;
+	color: #999;
+	font-size: 18px;
+	width: 18px;
+	flex-shrink: 0;
+}
+
+.csp-drag-handle:active {
+	cursor: grabbing;
+}
+
+.csp-field-toggle {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	flex: 1;
+	margin: 0;
+}
+
+.csp-field-toggle input[type="checkbox"] {
+	margin: 0;
+}
+
+.csp-field-key {
+	font-size: 13px;
+}
+
+.csp-field-toggle-details {
+	background: none !important;
+	border: none !important;
+	cursor: pointer;
+	padding: 0;
+	color: #666;
+}
+
+.csp-field-toggle-details .dashicons {
+	transition: transform .15s ease;
+}
+
+.csp-field-toggle-details.open .dashicons {
+	transform: rotate(180deg);
+}
+
+.csp-field-details {
+	border-top: 1px solid #eee;
+	padding: 12px 12px 4px 40px;
+}
+
+.csp-field-details .form-table {
+	margin: 0;
+}
+
+.csp-field-details .form-table th {
+	padding: 6px 10px 6px 0;
+	width: 120px;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+.csp-field-details .form-table td {
+	padding: 6px 0;
+}
+
+.csp-field-details .form-table input[type="text"],
+.csp-field-details .form-table input[type="number"] {
+	width: 100%;
+	max-width: 320px;
+}
+
+.csp-spinner.is-active {
+	visibility: visible;
+}
+
+.csp-save-status {
+	font-style: italic;
+	color: #00a32a;
+	margin-left: 8px;
+}
+
+.csp-save-status.error {
+	color: #d63638;
+}
+
+.csp-field-item.csp-disabled {
+	opacity: 0.55;
+}
